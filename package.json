@@ -1,6 +1,6 @@
 {
   "name": "@lane4-leo/npm-registry-test",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "description": "package example",
   "main": "index.js",
   "module": "dist/print.test.js",
