@@ -1,11 +1,11 @@
-import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
-import { PrintModule } from './print/print.module';
+import {Module} from '@nestjs/common';
+import {AppService} from './app.service';
+import {PrintModule} from './print/print.module';
 
 @Module({
-  imports: [PrintModule],
-  controllers: [AppController],
-  providers: [AppService],
+    imports: [PrintModule],
+    providers: [AppService],
+    exports: [PrintModule]
 })
-export class AppModule {}
+export class AppModule {
+}
