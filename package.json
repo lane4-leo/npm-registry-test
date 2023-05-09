@@ -3,6 +3,7 @@
   "version": "1.0.17",
   "description": "package example",
   "main": "index.js",
+  "module": "dist/print.test.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prebuild": "rimraf dist",
