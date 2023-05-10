@@ -1,6 +1,6 @@
 {
   "name": "@lane4-leo/npm-registry-test",
-  "version": "1.0.23",
+  "version": "1.0.24",
   "description": "package example",
   "module": "dist/print.test.js",
   "main": "src/print/print.service.ts",
