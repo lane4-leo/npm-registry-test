@@ -2,7 +2,7 @@
   "name": "@lane4-leo/npm-registry-test",
   "version": "1.0.31",
   "description": "package example",
-  "main": "dist/index.js",
+  "main": "dist/src/index.js",
   "files": [
     "dist"
   ],
