@@ -2,15 +2,15 @@
   "name": "@lane4-leo/npm-registry-test",
   "version": "1.0.21",
   "description": "package example",
-  "main": "index.js",
   "module": "dist/print.test.js",
+  "main": "src/main.ts",
   "files": [
     "dist"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prebuild": "rimraf dist",
-    "build": "nest build",
+    "build": "yarn tsc",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "node dist/src/main.js",
     "start:dev-backup": "nest start --watch",
@@ -33,6 +33,25 @@
     "schema:sync": "ts-node ./node_modules/typeorm/cli.js schema:sync",
     "postinstall": "patch-package"
   },
+  "exports": {
+    ".": {
+      "import": [
+        "./dist/main.js",
+        "./dist/print/print.module.js",
+        "./dist/print/print.service.js"
+      ],
+      "require": [
+        "./src/main.ts",
+        "./src/print/print.module.ts",
+        "./src/print/print.service.ts"
+      ],
+      "types": [
+        "./dist/main.d.ts",
+        "./dist/print/print.module.d.ts",
+        "./dist/print/print.service.d.ts"
+      ]
+    }
+  },
   "author": "dabin",
   "license": "ISC",
   "keywords": [
@@ -48,6 +67,12 @@
   "dependencies": {
     "@nestjs/common": "^9.4.0",
     "@nestjs/core": "^9.4.0",
-    "@nestjs/swagger": "^6.3.0"
+    "@nestjs/swagger": "^6.3.0",
+    "@nestjs/testing": "^9.4.0",
+    "supertest": "^6.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.1.1",
+    "typescript": "^5.0.4"
   }
 }
