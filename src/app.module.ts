@@ -1,6 +1,6 @@
 import {Module} from '@nestjs/common';
 import {AppService} from './app.service';
-import {PrintModule} from './print/print.module';
+import {PrintModule} from "./print/print.module";
 
 @Module({
     imports: [PrintModule],

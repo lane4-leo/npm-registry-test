@@ -1,3 +1,5 @@
-import {PrintModule} from './print/print.module'
-import {PrintService} from './print/print.service'
-export {PrintModule, PrintService}
+// import {PrintModule} from '../src/print/print.module'
+// import {PrintService} from '../src/print/print.service'
+// export {PrintModule, PrintService}
+export * from '../src/print/print.module';
+export * from '../src/print/print.service';
