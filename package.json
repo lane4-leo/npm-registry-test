@@ -2,15 +2,15 @@
   "name": "@lane4-leo/npm-registry-test",
   "version": "1.0.27",
   "description": "package example",
-  "module": "dist/print.test.js",
-  "main": "src/print/print.module.ts",
+  "main": "dist/index.js",
   "files": [
     "dist"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prebuild": "rimraf dist",
-    "build": "yarn tsc",
+    "prebuild": "rimraf dist && tsc",
+    "build": "rimraf dist && tsc",
+    "prepublish": "npm run build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "node dist/src/main.js",
     "start:dev-backup": "nest start --watch",
@@ -67,6 +67,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.1.1",
+    "rimraf": "^5.0.0",
     "typescript": "^5.0.4"
   }
 }
