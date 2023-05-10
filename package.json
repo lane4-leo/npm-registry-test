@@ -3,7 +3,7 @@
   "version": "1.0.25",
   "description": "package example",
   "module": "dist/print.test.js",
-  "main": "src/print/print.service.ts",
+  "main": "src/print/print.module.ts",
   "files": [
     "dist"
   ],
@@ -36,13 +36,13 @@
   "exports": {
     ".": {
       "import": [
-        "./dist/print/print.service.js"
+        "./dist/print/print.module.js"
       ],
       "require": [
-        "./src/print/print.service.ts"
+        "./src/print/print.module.ts"
       ],
       "types": [
-        "./dist/print/print.service.d.ts"
+        "./dist/print/print.module.d.ts"
       ]
     }
   },
