@@ -20,5 +20,4 @@
     "noFallthroughCasesInSwitch": false,
     "strict": true,
   },
-  "include": ["src/print/print.module.ts"]
 }

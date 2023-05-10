@@ -8,8 +8,8 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prebuild": "rimraf dist && tsc",
-    "build": "rimraf dist && tsc",
+    "prebuild": "rimraf dist",
+    "build": "tsc",
     "prepublish": "npm run build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "node dist/src/main.js",
@@ -32,19 +32,6 @@
     "schema:drop": "ts-node ./node_modules/typeorm/cli.js schema:drop",
     "schema:sync": "ts-node ./node_modules/typeorm/cli.js schema:sync",
     "postinstall": "patch-package"
-  },
-  "exports": {
-    ".": {
-      "import": [
-        "./dist/print/print.module.js"
-      ],
-      "require": [
-        "./src/print/print.module.ts"
-      ],
-      "types": [
-        "./dist/print/print.module.d.ts"
-      ]
-    }
   },
   "author": "dabin",
   "license": "ISC",
