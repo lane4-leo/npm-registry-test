@@ -36,18 +36,12 @@
   "exports": {
     ".": {
       "import": [
-        "./dist/main.js",
-        "./dist/print/print.module.js",
         "./dist/print/print.service.js"
       ],
       "require": [
-        "./src/main.ts",
-        "./src/print/print.module.ts",
         "./src/print/print.service.ts"
       ],
       "types": [
-        "./dist/main.d.ts",
-        "./dist/print/print.module.d.ts",
         "./dist/print/print.service.d.ts"
       ]
     }
