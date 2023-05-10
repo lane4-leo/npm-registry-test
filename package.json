@@ -3,7 +3,7 @@
   "version": "1.0.22",
   "description": "package example",
   "module": "dist/print.test.js",
-  "main": "src/main.ts",
+  "main": "src/print/print.module.ts",
   "files": [
     "dist"
   ],
