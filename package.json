@@ -1,13 +1,14 @@
 {
   "name": "@lane4-leo/npm-registry-test",
-  "version": "1.0.34",
+  "version": "1.0.32",
   "description": "package example",
-  "main": "dist/index.js",
+  "main": "dist/src/index.js",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "rimraf dist && tsc",
+    "prebuild": "rimraf dist",
+    "build": "tsc",
     "prepublish": "npm run build"
   },
   "author": "dabin",
