@@ -5,7 +5,7 @@ import * as process from "process";
 export class PrintService {
       public PrintTest() {
           console.log(process.env.PRINT_TEST);
-        console.log('print test 입다.')
+        console.log('print test 입.')
         return 'print test';
     }
 }
