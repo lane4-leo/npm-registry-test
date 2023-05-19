@@ -1,3 +1,6 @@
+import {Injectable} from "@nestjs/common";
+
+@Injectable()
 export class BUtils  {
     public static BPrintTest() {
         console.log('B Print Test 입니다.')
